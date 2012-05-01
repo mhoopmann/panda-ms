@@ -1,0 +1,623 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\PAnDA2.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "C:\\users\\hoopmann\\Documents\\Software Development\\PAnDA\\res\\PAnDA.ico"
+IDR_PAnDA2TYPE          ICON                    "res\\PAnDA2Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP1             BITMAP                  "C:\\users\\hoopmann\\Documents\\Software Development\\PAnDA\\res\\PAnDA640.bmp"
+IDB_BITMAP2             BITMAP                  "res\\6x640.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_QUEUE_SUBMIT
+    BUTTON      ID_QUEUE_START
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About PAnDA2...",            ID_APP_ABOUT
+    END
+END
+
+IDR_PAnDA2TYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Log Window",                 ID_VIEW_LOGWINDOW, CHECKED
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About PAnDA2...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PAnDA2"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "PAnDA2, Version 2.01",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008,2009",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PANDA2_FORM DIALOGEX 0, 0, 320, 227
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Log",IDC_STATIC,7,190,306,30
+    CONTROL         "",IDC_COMBOBOXEX1,"ComboBoxEx32",CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,7,201,306,19
+    CONTROL         "",IDC_TAB2,"SysTabControl32",0x0,7,7,306,182
+END
+
+IDD_SHAREDPAGE DIALOGEX 0, 0, 278, 153
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT2,11,18,206,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BUTTON1,220,17,50,14
+    EDITTEXT        IDC_EDIT13,11,44,206,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BUTTON3,220,43,50,14
+    LTEXT           "Sequence Template:",IDC_STATIC,12,9,104,8
+    LTEXT           "Method Template:",IDC_STATIC,12,36,104,8
+    EDITTEXT        IDC_EDIT14,11,69,165,13,ES_AUTOHSCROLL
+    LTEXT           "Database Name:",IDC_STATIC,11,61,104,8
+    LTEXT           "Mass Analyzer:",IDC_STATIC,12,85,104,8
+    COMBOBOX        IDC_COMBO2,12,93,165,14,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,12,117,165,19,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Starting Device:",IDC_STATIC,12,109,90,8
+END
+
+IDD_JARPAGE DIALOGEX 0, 0, 292, 169
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "Jarrett controls",IDC_STATIC,55,42,74,8
+END
+
+IDD_HOOPPAGE DIALOGEX 0, 0, 308, 168
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Hardklör Parameters",IDC_STATIC,160,7,125,154
+    GROUPBOX        "Single Sample Parameters",IDC_STATIC,22,7,126,52
+    GROUPBOX        "Signal:Noise",IDC_STATIC,177,107,88,51
+    CONTROL         "Signal:Noise Cutoff",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,180,116,78,11
+    EDITTEXT        IDC_EDIT1,233,128,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,233,142,29,12,ES_AUTOHSCROLL
+    LTEXT           "Ratio:",IDC_STATIC,186,130,25,8
+    LTEXT           "Window Size:",IDC_STATIC,186,144,44,8
+    LTEXT           "Mass Analyzer:",IDC_STATIC,165,19,50,8
+    LTEXT           "Resolution:",IDC_STATIC,165,32,37,8
+    LTEXT           "Window Size:",IDC_STATIC,165,45,44,8
+    LTEXT           "Max Peps/Window:",IDC_STATIC,165,57,62,8
+    LTEXT           "Max Depth:",IDC_STATIC,165,71,38,8
+    LTEXT           "Charge:",IDC_STATIC,165,84,27,8
+    LTEXT           "Correlation:",IDC_STATIC,165,96,39,8
+    COMBOBOX        IDC_COMBO1,231,16,50,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,231,30,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,231,43,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,231,56,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,231,69,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,231,95,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,231,82,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,263,82,18,12,ES_AUTOHSCROLL
+    LTEXT           "to",IDC_STATIC,252,84,8,8
+    LTEXT           "Number of iterations:",IDC_STATIC,28,19,69,8
+    LTEXT           "MS/MS Coverage:",IDC_STATIC,28,32,58,8
+    LTEXT           "Retention Time Tolerance:",IDC_STATIC,28,45,85,8
+    EDITTEXT        IDC_EDIT10,119,17,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,119,30,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,119,43,25,12,ES_AUTOHSCROLL
+END
+
+IDD_QUEUEBAR DIALOGEX 0, 0, 106, 189
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,6,7,93,12,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDC_LIST1,6,19,93,149,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Up",IDC_BUTTON1,6,168,31,14
+    PUSHBUTTON      "Down",IDC_BUTTON2,37,168,31,14
+    PUSHBUTTON      "Delete",IDC_BUTTON3,68,168,31,14
+    CONTROL         "",IDC_ACQUISITIONCTRL1,
+                    "{7ADCDC5E-D0B6-11D1-AA76-002078136998}",WS_TABSTOP,0,0,21,20
+END
+
+IDD_MSCOUT DIALOGEX 0, 0, 305, 177
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Single Sample Parameters",IDC_STATIC,22,7,126,52
+    LTEXT           "Number of iterations:",IDC_STATIC,28,19,69,8
+    LTEXT           "MS/MS Coverage:",IDC_STATIC,28,32,58,8
+    LTEXT           "Retention Time Tolerance:",IDC_STATIC,28,45,85,8
+    EDITTEXT        IDC_EDIT10,119,17,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,119,30,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,119,43,25,12,ES_AUTOHSCROLL
+    GROUPBOX        "MScout Parameters",IDC_STATIC,160,7,125,82
+    LTEXT           "Initial Retention Time:",IDC_STATIC,163,18,72,8
+    EDITTEXT        IDC_EDIT3,236,16,45,12,ES_AUTOHSCROLL
+    LTEXT           "Final Retention Time:",IDC_STATIC,164,32,72,8
+    EDITTEXT        IDC_EDIT4,236,30,45,12,ES_AUTOHSCROLL
+    LTEXT           "Peak Width (min):",IDC_STATIC,164,46,72,8
+    EDITTEXT        IDC_EDIT5,236,44,45,12,ES_AUTOHSCROLL
+    LTEXT           "Resolution:",IDC_STATIC,164,60,72,8
+    EDITTEXT        IDC_EDIT6,236,58,45,12,ES_AUTOHSCROLL
+    LTEXT           "S/N Ratio:",IDC_STATIC,164,75,72,8
+    EDITTEXT        IDC_EDIT7,236,72,45,12,ES_AUTOHSCROLL
+END
+
+IDD_LOGVIEW DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,7,7,302,166,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,2,0
+ PRODUCTVERSION 2,0,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Alpha version, Build Date: October 12, 2009"
+            VALUE "CompanyName", "Michael Hoopmann, Jarrett Eggertson, Michael MacCoss, University of Washington"
+            VALUE "FileDescription", "PAnDA: Post Analysis Data Acquisition"
+            VALUE "FileVersion", "2.0.2.0"
+            VALUE "InternalName", "PAnDA2.exe"
+            VALUE "LegalCopyright", "(c) 2009, University of Washington.  All rights reserved."
+            VALUE "OriginalFilename", "PAnDA2.exe"
+            VALUE "ProductName", "PAnDA: Post Analysis Data Acquisition"
+            VALUE "ProductVersion", "2.0.2.0"
+            VALUE "SpecialBuild", "alpha"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PANDA2_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_SHAREDPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_JARPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_HOOPPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_QUEUEBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 99
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_MSCOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_LOGVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_HOOPPAGE DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0x5446, 0x4349, 0x0052, 
+    IDC_COMBO1, 0x403, 9, 0
+0x724f, 0x6962, 0x7274, 0x7061, "\000" 
+    0
+END
+
+IDD_QUEUEBAR DLGINIT
+BEGIN
+    IDC_ACQUISITIONCTRL1, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x034f, 0x0000, 0x034f, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "PAnDA2"
+    IDR_PAnDA2TYPE          "\nPAnDA2\nPAnDA2\nPAnDA2 Files (*.pnd)\n.pnd\nPAnDA2.Document\nPAnDA2.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PAnDA2"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_LOGWINDOW       "Show or hide the PAnDA log"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\PAnDA2.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
